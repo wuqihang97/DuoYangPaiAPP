@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/shape_all_title"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@color/white"
+        android:textSize="48px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:background="@drawable/bg7_img_prof_nor"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_user_personality1"
+                    style="@style/TextUser"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="410px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/shape_user_text"
+                    android:text="活力" />
+
+                <TextView
+                    android:id="@+id/tv_user_personality2"
+                    style="@style/TextUser"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_alignTop="@id/tv_user_personality1"
+                    android:layout_marginLeft="140px"
+                    android:layout_toRightOf="@id/tv_user_personality1"
+                    android:background="@drawable/shape_user_text2"
+                    android:text="文艺" />
+
+                <TextView
+                    android:id="@+id/tv_user_personality3"
+                    style="@style/TextUser"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="320px"
+                    android:layout_marginTop="190px"
+                    android:background="@drawable/shape_user_text3"
+                    android:text="美食" />
+
+                <ImageView
+                    android:id="@+id/iv_user_avater"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="150px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_photo_prof_nor" />
+
+                <TextView
+                    android:id="@+id/tv_user_personality4"
+                    style="@style/TextUser"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_alignTop="@id/tv_user_personality3"
+                    android:layout_marginLeft="60px"
+                    android:layout_toRightOf="@id/iv_user_avater"
+                    android:background="@drawable/shape_user_text4"
+                    android:text="抹茶\n控" />
+
+                <TextView
+                    android:id="@+id/tv_user_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_user_avater"
+                    android:layout_marginTop="20px"
+                    android:gravity="center"
+                    android:text="西红柿炒番茄"
+                    android:textColor="@color/white"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_user_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:text="粉丝108"
+                    android:textColor="@color/white"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_user_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_user_fans"
+                    android:layout_marginRight="100px"
+                    android:layout_toLeftOf="@id/tv_user_fans"
+                    android:text="关注32"
+                    android:textColor="@color/white"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_user_release"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_user_fans"
+                    android:layout_marginLeft="100px"
+                    android:layout_toRightOf="@id/tv_user_fans"
+                    android:text="发布13"
+                    android:textColor="@color/white"
+                    android:textSize="36px" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_user_myorder"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:drawableLeft="@drawable/bg_icon_title_nor1"
+                android:text="我的订单" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/all_border" >
+            </View>
+
+            <Button
+                android:id="@+id/btn_user_wallet"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:drawableLeft="@drawable/bg_icon_title_nor2"
+                android:text="我的钱包" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/all_border" >
+            </View>
+
+            <Button
+                android:id="@+id/btn_user_ticket"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:drawableLeft="@drawable/bg_icon_title_nor3"
+                android:text="我的票券" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/all_border" >
+            </View>
+
+            <Button
+                android:id="@+id/btn_user_bills"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:drawableLeft="@drawable/bg_icon_title_nor4"
+                android:text="我的账单" />
+
+            <Button
+                android:id="@+id/btn_user_sign"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="20px"
+                android:drawableLeft="@drawable/bg_icon_title_nor5"
+                android:text="签到" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/all_border" >
+            </View>
+
+            <Button
+                android:id="@+id/btn_user_theme"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:drawableLeft="@drawable/bg_icon_title_nor6"
+                android:text="主题" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/all_border" >
+            </View>
+
+            <Button
+                android:id="@+id/btn_user_invite"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:drawableLeft="@drawable/bg_icon_title_nor7"
+                android:text="邀请好友" />
+
+            <Button
+                android:id="@+id/btn_user_service"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="20px"
+                android:drawableLeft="@drawable/bg_icon_title_nor8"
+                android:text="客服" />
+
+            <Button
+                android:id="@+id/btn_user_more"
+                style="@style/TextUser2"
+                android:layout_width="match_parent"
+                android:layout_height="136px"
+                android:layout_marginTop="20px"
+                android:drawableLeft="@drawable/bg_icon_title_nor9"
+                android:text="更多" />
+
+            <Button
+                android:id="@+id/btn_user_drop"
+                android:layout_width="880px"
+                android:layout_height="120px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50px"
+                android:background="@drawable/shape_registered_text2"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+
+            <!-- 配置边角 -->
+            <corners 
+                android:topLeftRadius="50px" 
+                android:bottomLeftRadius="50px" />
+            
+			
+            <!-- 配置渐变色 -->
+            <gradient
+                android:centerColor="#ff3d00"
+                android:endColor="#ff3d00"
+                android:startColor="#ff3d00" />
+        </shape>
+    </item>
+    
+    <item
+        android:bottom="1px"
+        android:top="1px"
+        android:left="1px">
+        <shape>
+
+            <!-- 配置边角 -->
+            <corners 
+                android:topLeftRadius="49px" 
+                android:bottomLeftRadius="49px" />
+
+            <!-- 配置渐变色 -->
+            <gradient
+                android:centerColor="#ffffff"
+                android:endColor="#ffffff"
+                android:startColor="#ffffff" />
+        </shape>
+    </item>
+
+</layer-list>

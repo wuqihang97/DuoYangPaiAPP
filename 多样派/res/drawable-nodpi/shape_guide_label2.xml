@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+
+            <!-- 配置边角 -->
+            <corners android:radius="50px" />
+
+            <!-- 纯色 -->
+            <solid android:color="#999999" />
+        </shape>
+    </item>
+    <item
+        android:bottom="2px"
+        android:left="2px"
+        android:right="2px"
+        android:top="2px">
+        <shape>
+
+            <!-- 配置边角 -->
+            <corners android:radius="48px" />
+
+            <!-- 纯色 -->
+            <solid android:color="#f2f2f2" />
+        </shape>
+    </item>
+
+</layer-list>

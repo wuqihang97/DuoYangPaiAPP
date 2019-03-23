@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_guide_menu"
+        android:layout_width="180px"
+        android:layout_height="16px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_guide_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_marginRight="22px"
+            android:background="@drawable/selector_guide"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rb_guide_capsule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_marginRight="22px"
+            android:background="@drawable/selector_guide"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_guide_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22px"
+            android:layout_marginRight="22px"
+            android:background="@drawable/selector_guide"
+            android:button="@null" />
+    </RadioGroup>
+
+</RelativeLayout>

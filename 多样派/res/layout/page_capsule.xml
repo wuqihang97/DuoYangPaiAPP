@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1700px"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/shape_all_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_capsule_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="190px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="声音胶囊"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+
+        <ImageView
+            android:id="@+id/btn_capsule_set"
+            android:layout_width="190px"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/nav_button_search_nor" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="20px"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg1_img_content_nor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270px"
+            android:layout_marginTop="120px"
+            android:text="点击制作属于你的声囊"
+            android:textColor="@color/login_registered_text_color"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_capsule"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_capsule_popular"
+            style="@style/CapsuleMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="热门" />
+
+        <RadioButton
+            android:id="@+id/rb_capsule_natural"
+            style="@style/CapsuleMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="自然" />
+
+        <RadioButton
+            android:id="@+id/rb_capsule_cure"
+            style="@style/CapsuleMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="治愈" />
+
+        <RadioButton
+            android:id="@+id/rb_capsule_emotion"
+            style="@style/CapsuleMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="情感" />
+
+        <RadioButton
+            android:id="@+id/rb_capsule_other"
+            style="@style/CapsuleMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="其他" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_capsule_container"
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:layout_marginTop="30px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#22000000" />
+
+        <ImageView
+            android:layout_width="146px"
+            android:layout_height="146px"
+            android:layout_marginLeft="52px"
+            android:layout_marginTop="2px"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg8_img_content_nor6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210px"
+            android:layout_marginTop="40px"
+            android:text="#自然#"
+            android:textColor="@color/login_text_color"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290px"
+            android:layout_marginTop="40px"
+            android:text="秋天,写着相思"
+            android:textColor="@color/login_registered_text_color"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210px"
+            android:layout_marginTop="80px"
+            android:text="秋的声音,从远方匆匆地来,向远方匆匆地去..."
+            android:textColor="@color/hint_text_color"
+            android:textSize="21.6px" />
+
+        <CheckBox
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="820px"
+            android:layout_marginTop="80px"
+            android:background="@drawable/selector_capsule_button"
+            android:button="@null" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="900px"
+            android:layout_marginTop="80px"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_button_next_nor" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="980px"
+            android:layout_marginTop="80px"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_button_list_nor" />
+
+        <SeekBar
+            android:layout_width="820px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200px"
+            android:layout_marginTop="20px"
+            android:max="100"
+            android:maxHeight="2px"
+            android:minHeight="2px"
+            android:progress="0"
+            android:progressDrawable="@drawable/shape_seekbar"
+            android:thumb="@drawable/bg_img_icon_nor2"
+            android:thumbOffset="9px" />
+    </RelativeLayout>
+
+</LinearLayout>

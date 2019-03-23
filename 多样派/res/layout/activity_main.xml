@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nor_background_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <cn.tedu.wqhtest.ui.MyViewPager
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="1700px" />
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/all_border"
+	    />
+    <RadioGroup
+        android:id="@+id/rg_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="@color/bottom_menu_color"
+        android:orientation="horizontal" >
+		
+         <RadioButton
+            android:id="@+id/rb_tab_item_home"
+            style="@style/BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_home_icon_home"
+            android:text="@string/home" />
+        
+        <RadioButton
+            android:id="@+id/rb_tab_item_capsule"
+            style="@style/BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_home_icon_capsule"
+            android:text="@string/capsule" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_item_dynamic"
+            style="@style/BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_home_icon_dynamic"
+            android:text="@string/dynamic" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_item_list"
+            style="@style/BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_home_icon_list"
+            android:text="@string/list" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_item_user"
+            style="@style/BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_home_icon_user"
+            android:text="@string/user" />
+    </RadioGroup>
+
+</LinearLayout>

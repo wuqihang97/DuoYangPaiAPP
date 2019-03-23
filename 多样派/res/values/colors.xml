@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="bottom_menu_color">#fafafa</color>
+    <color name="home_recommend_text">#ffff00</color>
+    <color name="home_main_color">#ff3d00</color>
+    <color name="white">#ffffff</color>
+    <color name="nor_background_color">#f2f2f2</color>
+    <color name="text_hint_color">#bfbfbf</color>
+    <color name="nor_sort_text_color">#141414</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="home_contents_bottom">#fff799</color>
+    <color name="dynamic_text_color">#f09f86</color>
+    <color name="login_text_color">#00a7fb</color>
+    <color name="login_registered_text_color">#000000</color>
+    <color name="all_border">#d9d9d9</color>
+    <color name="label_text">#666666</color>
+    <color name="forget_text">#000000</color>
+    <color name="none">#00ffffff</color>
+    
+
+</resources>

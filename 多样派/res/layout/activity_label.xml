@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/shape_all_title" >
+
+        <Button
+            android:id="@+id/btn_label_back"
+            style="@style/ButtonRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="60px"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/tv_label_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标签"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+
+        <Button
+            android:id="@+id/btn_label_submit"
+            style="@style/ButtonRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="60px"
+            android:text="完成" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_label_content"
+        android:layout_width="800px"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_login_text"
+        android:gravity="center"
+        android:hint="请输入标签名称"
+        android:textColor="@color/text_hint_color"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_label_display"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@color/white"
+        android:drawableRight="@drawable/bg_button_msg_nor3"
+        android:gravity="center_vertical"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:text="不显示标签"
+        android:textColor="@color/hint_text_color"
+        android:textSize="44px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="60px"
+        android:background="@color/all_border" />
+
+    <GridView
+        android:id="@+id/gv_label_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:horizontalSpacing="40px"
+        android:numColumns="4"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:paddingTop="50px"
+        android:scrollbars="none"
+        android:verticalSpacing="80px" >
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="BottomMenu">
+        <item name="android:background">@color/bottom_menu_color</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingBottom">15px</item>
+        <item name="android:paddingTop">35px</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:drawablePadding">10px</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@drawable/selector_home_icon_text</item>
+    </style>
+
+    <style name="CapsuleMenu">
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">@drawable/selector_capsule_background</item>
+        <item name="android:textColor">@color/login_registered_text_color</item>
+        <item name="android:textSize">40px</item>
+        <item name="android:layout_marginLeft">26px</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">26px</item>
+    </style>
+
+    <style name="HomeTitle">
+        <item name="android:paddingBottom">24px</item>
+        <item name="android:paddingTop">24px</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="HomeSort">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:drawablePadding">20px</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="ButtonDynamic">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_dynamic_text</item>
+        <item name="android:textSize">44px</item>
+    </style>
+
+    <style name="TextUser">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextForget">
+        <item name="android:paddingLeft">24px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/forget_text</item>
+    </style>
+
+    <style name="EditForget">
+        <item name="android:textColorHint">@color/text_hint_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:textColor">@color/forget_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditLogin">
+        <item name="android:background">@color/white</item>
+        <item name="android:drawablePadding">30px</item>
+        <item name="android:paddingLeft">54px</item>
+        <item name="android:textColorHint">@color/text_hint_color</item>
+        <item name="android:textSize">36px</item>
+    </style>
+
+    <style name="TextUser2">
+        <item name="android:drawablePadding">20px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/nor_sort_text_color</item>
+        <item name="android:textSize">44px</item>
+        <item name="android:paddingLeft">24px</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingRight">24px</item>
+        <item name="android:drawableRight">@drawable/bg_button_msg_nor2</item>
+    </style>
+
+    <style name="TextContents">
+        <item name="android:textColor">@color/nor_sort_text_color</item>
+        <item name="android:textSize">34px</item>
+        <item name="android:layout_marginTop">30px</item>
+    </style>
+
+    <style name="TextNews">
+        <item name="android:textColor">@color/nor_sort_text_color</item>
+        <item name="android:textSize">44px</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextNews2">
+        <item name="android:textColor">@color/text_hint_color</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:drawableRight">@drawable/bg_button_msg_nor2</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:drawablePadding">20px</item>
+        <item name="android:paddingRight">60px</item>
+    </style>
+
+    <style name="ButtonRelease">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">44px</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonReleaseLabel">
+        <item name="android:textColor">@drawable/selector_label_text</item>
+        <item name="android:textSize">40px</item>
+        <item name="android:background">@drawable/selector_news</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NorSort">
+        <item name="android:background">@color/white</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textSize">40px</item>
+        <item name="android:textColor">@color/nor_sort_text_color</item>
+        <item name="android:drawablePadding">11px</item>
+    </style>
+   
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

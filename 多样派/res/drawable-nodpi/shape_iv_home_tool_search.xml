@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+
+            <!-- 配置边角 -->
+            <corners 
+                android:topRightRadius="50px" 
+                android:bottomRightRadius="50px" />
+            
+			
+            <!-- 纯色 -->
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    
+   
+ <item
+        android:bottom="1px"
+        android:top="1px"
+        android:right="1px">
+        <shape>
+
+            <!-- 配置边角 -->
+            <corners 
+                android:topRightRadius="49px" 
+                android:bottomRightRadius="49px" />
+
+            
+        </shape>
+    </item>
+
+</layer-list>

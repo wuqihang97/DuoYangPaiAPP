@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_capsule_contents"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:paddingBottom="20px"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/iv_capsule_icon"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg8_img_content_nor1" />
+
+    <TextView
+        android:id="@+id/tv_capsule_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240px"
+        android:layout_marginTop="50px"
+        android:text="#自然#"
+        android:textColor="@color/login_text_color"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/tv_capsule_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="380px"
+        android:layout_marginTop="50px"
+        android:text="秋天,写着相思"
+        android:textColor="@color/login_registered_text_color"
+        android:textSize="44px" />
+
+    <TextView
+        android:id="@+id/tv_capsule_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240px"
+        android:layout_marginTop="110px"
+        android:text="秋的声音,从远方匆匆地来,向远方匆匆地去..."
+        android:textColor="@color/hint_text_color"
+        android:textSize="36px" />
+
+</RelativeLayout>

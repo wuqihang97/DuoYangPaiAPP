@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_home_tool"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@drawable/shape_all_title"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_home_tool_location"
+            style="@style/HomeTitle"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:drawableTop="@drawable/home_tool_location"
+            android:text="舟山" />
+
+        <EditText
+            android:id="@+id/et_home_tool_search"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_et_home_tool_search"
+            android:hint="请输入活动类型或活动名"
+            android:paddingLeft="50px"
+            android:singleLine="true"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/iv_home_tool_search"
+            android:layout_width="170px"
+            android:layout_height="100px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30px"
+            android:background="@drawable/shape_iv_home_tool_search"
+            android:paddingBottom="15px"
+            android:paddingTop="15px"
+            android:src="@drawable/nor_tool_search" />
+
+        <Button
+            android:id="@+id/btn_home_tool_code"
+            style="@style/HomeTitle"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30px"
+            android:drawableTop="@drawable/home_tool_code"
+            android:text="二维码" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_home_banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="320px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_home_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="22px"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginRight="22px" >
+
+                    <Button
+                        android:id="@+id/btn_home_item_play"
+                        style="@style/HomeSort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/home_icon_content_nor1"
+                        android:text="@string/play" />
+
+                    <Button
+                        android:id="@+id/btn_home_item_art"
+                        style="@style/HomeSort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/home_icon_content_nor2"
+                        android:text="@string/art" />
+
+                    <Button
+                        android:id="@+id/btn_home_item_education"
+                        style="@style/HomeSort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/home_icon_content_nor3"
+                        android:text="@string/education" />
+
+                    <Button
+                        android:id="@+id/btn_home_item_society"
+                        style="@style/HomeSort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/home_icon_content_nor4"
+                        android:text="@string/society" />
+
+                    <Button
+                        android:id="@+id/btn_home_item_exercise"
+                        style="@style/HomeSort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/home_icon_content_nor5"
+                        android:text="@string/exercise" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_home_recommend_text"
+                    android:layout_width="210px"
+                    android:layout_height="60px"
+                    android:background="@drawable/shape_home_text"
+                    android:drawableRight="@drawable/home_icon_title_nor"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="10px"
+                    android:text="@string/recommend"
+                    android:textColor="@color/home_recommend_text"
+                    android:textSize="30px" />
+
+                <ListView
+                    android:id="@+id/lv_home_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginRight="60px"
+                    android:divider="@null"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_home_rotate"
+            android:layout_width="250px"
+            android:layout_height="280px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="76px"
+            android:layout_marginRight="44px"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_icon_link_nor" />
+    </RelativeLayout>
+
+</LinearLayout>

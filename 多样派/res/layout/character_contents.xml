@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ImageView
+        android:id="@+id/iv_character_contents"
+        android:layout_width="960px"
+        android:layout_height="400px"
+        android:layout_marginTop="15px"
+        android:layout_marginBottom="15px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/home_img_content_nor1" />
+	
+</LinearLayout>

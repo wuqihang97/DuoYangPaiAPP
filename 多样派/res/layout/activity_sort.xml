@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_tool"
+        android:layout_width="match_parent"
+        android:layout_height="148px"
+        android:background="@color/nor_background_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingRight="164px" >
+
+        <ImageView
+            android:id="@+id/iv_tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="38px"
+            android:paddingLeft="60px"
+            android:paddingRight="36px"
+            android:paddingTop="40px"
+            android:src="@drawable/nav_button_back_nor" />
+
+        <ImageView
+            android:id="@+id/iv_tool_search"
+            android:layout_width="170px"
+            android:layout_height="100px"
+            android:layout_marginBottom="24px"
+            android:layout_marginTop="24px"
+            android:background="@drawable/shape_iv_nor_tool_search"
+            android:paddingBottom="15px"
+            android:paddingLeft="35px"
+            android:paddingRight="35px"
+            android:paddingTop="15px"
+            android:src="@drawable/nor_tool_search" />
+
+        <EditText
+            android:id="@+id/et_tool_search"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_marginBottom="24px"
+            android:layout_marginTop="24px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_et_nor_tool_search"
+            android:gravity="left|center"
+            android:hint="输入活动类型或活动名"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="50px"
+            android:singleLine="true"
+            android:textColorHint="@color/text_hint_color"
+            android:textSize="34px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_sort_border" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118px"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sort_species"
+            style="@style/NorSort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/tool_button_pop_nor"
+            android:paddingLeft="69px"
+            android:paddingRight="69px"
+            android:text="分类" />
+
+        <Button
+            android:id="@+id/btn_sort_place"
+            style="@style/NorSort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/tool_button_pop_nor"
+            android:paddingLeft="69px"
+            android:paddingRight="69px"
+            android:text="全城" />
+
+        <Button
+            android:id="@+id/btn_sort_order"
+            style="@style/NorSort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/tool_button_pop_nor"
+            android:paddingLeft="69px"
+            android:paddingRight="69px"
+            android:text="筛选" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_sort_border" />
+
+    <GridView
+        android:id="@+id/gv_sort_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/nor_background_color"
+        android:horizontalSpacing="20px"
+        android:numColumns="2"
+        android:paddingTop="10px"
+        android:verticalSpacing="20px" >
+    </GridView>
+
+</LinearLayout>
